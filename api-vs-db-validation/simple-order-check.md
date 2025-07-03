@@ -24,4 +24,25 @@
   "status": "pending"
 }
 ```
-2.
+2.Terima Response dari API
+```
+{
+  "order_id": 101,
+  "user_id": 1,
+  "product_name": "Mouse Wireless",
+  "status": "pending"
+}
+```
+
+3. Validasi ke Database
+
+```
+   SELECT * FROM orders WHERE id = 101;
+```
+4. Hasil
+
+   | id  | user\_id | product\_name  | status  |
+| --- | -------- | -------------- | ------- |
+| 101 | 1        | Mouse Wireless | pending |
+
+
