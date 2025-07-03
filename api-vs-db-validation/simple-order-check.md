@@ -16,7 +16,7 @@
 - **Endpoint:** `/orders`  
 - **Header:** `Content-Type: application/json`  
 - **Body:**
-- 
+  
 ```json
 {
   "user_id": 1,
