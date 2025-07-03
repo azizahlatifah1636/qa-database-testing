@@ -5,8 +5,7 @@ Memastikan data yang diterima dari API benar-benar disimpan di database.
 
 
 Skenario: Buat Order lalu Cek di Database
-
- 1. Kirim API Request (via Postman)
+ Kirim API Request (via Postman)
 
 **Method:** POST  
 **Endpoint:** `/orders`  
@@ -18,18 +17,17 @@ Skenario: Buat Order lalu Cek di Database
   "status": "pending"
 }
 
----------------------------------
-2. Terima Response API
----------------------------------
+// Terima Response API
+
 
 {
   "order_id": 101,
   "user_id": 1,
   "status": "pending"
 }
-------------------------------------
-3. Cek Data di Database
-------------------------------------
+
+// Cek Data di Database
+
 
 SELECT * FROM orders WHERE id = 101;
 
