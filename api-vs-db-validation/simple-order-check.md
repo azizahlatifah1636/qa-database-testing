@@ -41,8 +41,7 @@
 ```
 4. Hasil
 
-   | id  | user\_id | product\_name  | status  |
-| --- | -------- | -------------- | ------- |
+| id  | user\_id | product\_name  | status  |
 | 101 | 1        | Mouse Wireless | pending |
 
 
