@@ -39,7 +39,7 @@
 ```
    SELECT * FROM orders WHERE id = 101;
 ```
-4. Hasil
+4. Hasil dari DATABASE
 
 | id  | user\_id | product\_name  | status  |
 | 101 | 1        | Mouse Wireless | pending |
