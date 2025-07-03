@@ -24,7 +24,7 @@
   "status": "pending"
 }
 ```
-2.Terima Response dari API
+2. Terima Response dari API
 ```
 {
   "order_id": 101,
@@ -43,5 +43,14 @@
 
 | id  | user\_id | product\_name  | status  |
 | 101 | 1        | Mouse Wireless | pending |
+
+5. Result : PASS
+
+| Field          | Data dari API    | Data dari Database | Status  |
+| `order_id`     | 101              | 101                | ✅ MATCH |
+| `user_id`      | 1                | 1                  | ✅ MATCH |
+| `product_name` | "Mouse Wireless" | "Mouse Wireless"   | ✅ MATCH |
+| `status`       | "pending"        | "pending"          | ✅ MATCH |
+
 
 
