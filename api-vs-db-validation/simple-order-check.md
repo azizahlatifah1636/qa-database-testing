@@ -1,35 +1,25 @@
-Validasi API Response vs Database (Manual)
+ Validasi API Response vs Database (Manual)
 
-Tujuan:
-Memastikan data yang diterima dari API benar-benar disimpan di database.
+ Tujuan
+ 
+----Memastikan bahwa data yang dikirim melalui API (misalnya POST order baru) benar-benar disimpan dengan benar ke dalam database.
 
+ Skenario Uji: Buat Order, Lalu Validasi di Database
 
-Skenario: Buat Order lalu Cek di Database
- Kirim API Request (via Postman)
+ Deskripsi
+ 
+---QA perlu memastikan bahwa setiap order yang dikirim melalui API `/orders` akan tersimpan dengan data yang sesuai di tabel `orders`.
 
-**Method:** POST  
-**Endpoint:** `/orders`  
-**Body (JSON):**
+ 1. Kirim Request API
+
+- **Method:** POST  
+- **Endpoint:** `/orders`  
+- **Header:** `Content-Type: application/json`  
+- **Body:**
+- 
 ```json
 {
   "user_id": 1,
-  "product_name": "Mouse",
+  "product_name": "Mouse Wireless",
   "status": "pending"
 }
-
-// Terima Response API
-
-
-{
-  "order_id": 101,
-  "user_id": 1,
-  "status": "pending"
-}
-
-// Cek Data di Database
-
-
-SELECT * FROM orders WHERE id = 101;
-
-
-
