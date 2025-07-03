@@ -18,14 +18,18 @@ Skenario: Buat Order lalu Cek di Database
   "status": "pending"
 }
 
+---------------------------------
 2. Terima Response API
+---------------------------------
+
 {
   "order_id": 101,
   "user_id": 1,
   "status": "pending"
 }
-
+------------------------------------
 3. Cek Data di Database
+------------------------------------
 
 SELECT * FROM orders WHERE id = 101;
 
